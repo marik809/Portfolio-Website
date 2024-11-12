@@ -1,0 +1,16 @@
+
+@media (min-width: 180px) and (max-width: 980px){
+    .text {
+        font-size: 40px;
+    }
+    
+    div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div > input {
+        font-size: 30px;
+    }
+}

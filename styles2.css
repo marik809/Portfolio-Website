@@ -1,0 +1,627 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+  }
+  
+  body {
+    text-align: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    /*font-family: 'Berghan Free', sans-serif;*/
+    
+  }
+  
+  .main {
+    background-color: black;
+    padding: 5px;
+  }
+  
+  .main::before, ::after {
+    content: "";
+    position:absolute;
+    top: 24%;
+    aspect-ratio: 1;
+    width: 120px;
+  }
+
+  .main::before {
+    left: 0;
+    background: radial-gradient(circle at 100% 0%, transparent 71%, gray 0);
+  }
+
+  .main::after {
+    right: 0;
+    background: radial-gradient(circle at 0% 0%, transparent 71%, gray 0);
+  }
+
+  .icon {
+    border-radius: 50%;
+  }
+  
+  .Frontinfo {
+    font-size: 30px;
+    padding: 0px;
+    margin: 0;
+    color: white;
+  }
+  
+  span {
+    width: 25%;
+    height: 1%;
+    background-color: white;
+    display: block;
+    position: absolute;
+    top: 23rem;
+    left: 78rem;
+  }
+  
+  div > .Frontinfo > p {
+    font-size: 30px;
+    padding: 0;
+    line-height: 0px;
+  }
+  
+  .BasicInfo {
+    margin: 0;
+    display: flex;
+    gap: 50px;
+    background-color: grey;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .BasicInfo::before, .BasicInfo::after {
+    content: "";
+    position:absolute;
+    top: 41.5%;
+    aspect-ratio: 1;
+    width: 120px;
+  }
+
+  .BasicInfo::before {
+    left: 0;
+    background: radial-gradient(circle at 100% 100%, transparent 71%, gray 0);
+  }
+
+  .BasicInfo::after {
+    right: 0;
+    background: radial-gradient(circle at 0% 100%, transparent 71%, gray 0) 100% 0/100% 100%;
+  }
+  
+  nav > ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 0 5px;
+    gap: 100px;
+    list-style-type: none;
+  }
+
+  nav > ul > li a {
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: .1em 1em;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 200ms ease;
+  }
+
+  nav > ul > li a:hover{
+    padding: .8em 1em;
+    background-color: white;
+    scale: 2;
+  }
+  
+  .content {
+    width: min(1300px, 100% - 3em);
+    margin-inline: auto;
+    padding-block: 1em;
+  }
+  
+  div > .content > div > p {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0;
+    line-height: 0px;
+    color: black;
+  }
+  
+  .credits {
+    position: absolute;
+    min-height: 300px;
+    left: 0px;
+    background-color: black;
+  }
+  
+  .videos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  video {
+    aspect-ratio: auto 16/9;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+  }
+  
+  footer {
+    color: white;
+    font-size: 50px;
+    padding: 0;
+    background-color: black;
+    min-height: 300px;
+    margin-top: auto;
+    transition: 150ms ease;
+  }
+  
+  footer::before, footer::after {
+    content: "";
+    position:absolute;
+    top: 238.5%;
+    aspect-ratio: 1;
+    width: 120px;
+  }
+
+  footer::before {
+    left: 0;
+    background: radial-gradient(circle at 100% 0%, transparent 71%, black 0);
+  }
+
+  footer::after {
+    right: 0;
+    background: radial-gradient(circle at 0% 0%, transparent 71%, black 0);
+  }
+
+  footer > a {
+    color: grey;
+    font-size: 40px;
+    transition: 229ms ease;
+  }
+
+  footer > a:hover {
+    font-size: 60px;
+    scale: 3;
+    color: red;
+  }
+
+@media (min-width: 300px) and (max-width: 419px) {
+  .Frontinfo {
+    font-size: 20px;
+  }
+
+  .main::before, .main::after {
+    top: 28%;
+    width: 30px;
+  }
+
+  div > .Frontinfo > p {
+    font-size: 20px;
+  }
+  
+  span {
+    top: 20rem;
+    left: 6rem;
+    width: 50%;
+    height: 0.5%;
+  }
+
+  div > .content > div > p {
+    font-size: 20px;
+  }
+  .BasicInfo {
+    font-size: 12px;
+  }
+
+  .BasicInfo::before, .BasicInfo::after {
+    top: 33%;
+    width: 30px;
+  }
+
+  nav > ul {
+    gap: 20px;
+  }
+
+  nav > ul > li a {
+    padding: .05em .05em;
+  }
+
+  nav > ul > li a:hover {
+    padding: .08em .08em;
+  }
+
+  footer {
+    font-size: 20px;
+    min-height: 30px;
+  }
+
+  footer::before, footer::after {
+    top: 92%;
+    width: 30px;
+  }
+
+  footer > a {
+    font-size: 20px;
+  }
+
+}
+@media (min-width: 420px) and (max-width: 599px) {
+
+  .Frontinfo {
+    font-size: 15px;
+  }
+
+  .main::before, .main::after {
+    top: 25.5%;
+    width: 30px;
+  }
+  
+  .BasicInfo {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav > ul > li {
+    font-size: 15px;
+  }
+
+  nav > ul > li a {
+    padding: .1em 1em;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 200ms ease;
+  }
+
+  nav > ul > li a:hover{
+    padding: .8em 1em;
+    background-color: white;
+    scale: 2;
+  }
+  
+  .BasicInfo::before, .BasicInfo::after {
+    content: "";
+    position:absolute;
+    top: 32%;
+    aspect-ratio: 1;
+    width: 30px;
+  }
+
+  span {
+    top: 19rem;
+    left: 6rem;
+    width: 50%;
+    height: 0.5%;
+  }
+
+  div > .Frontinfo > p {
+    font-size: 15px;
+  }
+
+  nav > ul {
+    padding: 0 0 0 5px;
+    gap: 15px;
+    list-style-type: none;
+  }
+
+  footer {
+    font-size: 20px;
+    min-height: 100px;
+  }
+
+  footer::before, footer::after {
+    top: 103.5%;
+    width: 40px;
+  }
+
+  footer > a {
+    font-size: 20px;
+  }
+
+  footer > a:hover {
+    font-size: 40px;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .Frontinfo {
+        font-size: 20px;
+    }
+    
+    .main::before, .main::after {
+      top: 24.6%;
+      width: 70px;
+    }
+    
+    span {
+        top: 20.5rem;
+        left: 14.5rem;
+        width: 300px;
+        height: 8px; 
+    }
+
+    .BasicInfo {
+      font-size: 20px;
+    }
+
+    .BasicInfo::before, .BasicInfo::after {
+      top: 35%;
+      width: 70px;
+    }
+
+    nav > ul > li a {
+      font-size: 15.1px;
+    }
+
+    div > .Frontinfo > p {
+        font-size: 20px;
+        top: 10px;
+    }
+    
+    div > .content > div > video {
+      width: 540px;
+      height: 400px;
+    }
+
+    footer {
+        font-size: 35px;
+        min-height: 150px;
+    }
+
+    footer::before, footer::after{
+      top: 172.7%;
+      width: 70px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1099px) {
+
+  .Frontinfo {
+     font-size: 30px;
+    }
+
+    .main::before, .main::after {
+      top: 29.6%;
+      width: 70px;
+    }
+
+    .main::before {
+      left: 0px;
+    }
+
+    .main::after {
+      right: 0px;
+    }
+
+    nav > ul {
+      gap: 30px;
+    }
+
+    nav > ul > li a {
+      font-size: 30px;
+    }
+
+    span {
+        width: 400px;
+        height: 10px;
+        top: 360px;
+        left: 320px;
+    }
+    
+    .BasicInfo::before, .BasicInfo::after {
+      top: 44.8%;
+      width: 100px;
+    }
+
+    .BasicInfo::before{
+      left: 0px;
+    }
+
+    .BasicInfo::after{
+      right: 0px;
+    }
+
+    div > .Frontinfo > p {
+        font-size: 30px;
+        top: 10px;
+    }
+
+    .videos {
+      width: 960px;
+    }
+
+    footer {
+      font-size: 50px;
+      min-height: 20px;
+    }
+
+    footer::before, footer::after {
+      top: 205.5%;
+      width: 70px;
+    }
+
+    footer::before {
+      left: 0px;
+    }
+
+    footer::after {
+      right: 0px;
+    }
+    
+}
+
+@media (min-width: 1100px) and (max-width: 1799px){
+  .Frontinfo {
+    font-size: 30px;
+   }
+
+   .main::before, .main::after {
+     top: 28.7%;
+     width: 80px;
+   }
+
+   .main::before {
+     left: 0px;
+   }
+
+   .main::after {
+     right: 0px;
+   }
+
+   span {
+    position: absolute;
+    top: 22.3rem;
+    left: 16.5em;
+    width: 29rem;
+}
+   nav > ul {
+     gap: 30px;
+   }
+
+   nav > ul > li a {
+     font-size: 30px;
+   }
+   
+   .BasicInfo::before, .BasicInfo::after {
+     top: 44.8%;
+     width: 100px;
+   }
+
+   .BasicInfo::before{
+     left: 0px;
+   }
+
+   .BasicInfo::after{
+     right: 0px;
+   }
+
+   div > .Frontinfo > p {
+       font-size: 30px;
+       top: 10px;
+   }
+
+   footer {
+     font-size: 50px;
+   }
+
+   footer::before, footer::after {
+     top: 258.2%;
+     width: 80px;
+   }
+
+   footer::before {
+     left: 0px;
+   }
+
+   footer::after {
+     right: 0px;
+   }
+  
+}
+
+/*1920x1080*/
+@media (min-width: 1800px) and (max-width: 1900px){
+
+  .main::before, .main::after {
+    top: 34.2%;
+    width: 100px;
+  }
+
+  .main::before {
+    left: 0px;
+  }
+
+  .main::after {
+    right: 0px;
+  }
+
+  span {
+      position: absolute;
+      top: 22.3rem;
+      left: 43.5rem;
+      width: 29rem;
+  }
+
+  .BasicInfo::before, .BasicInfo::after {
+    top: 57.5%;
+    width: 100px;
+  }
+
+  .BasicInfo::before{
+    left: 0px;
+  }
+
+  .BasicInfo::after{
+    right: 0px;
+  }
+
+  footer::before, footer::after {
+    top: 329.8%;
+    width: 80px;
+  }
+
+  footer::before {
+    left: 0px;
+  }
+
+  footer::after {
+    right: 0px;
+  }
+}
+
+/*3440*/
+@media (min-width: 1901px) and (max-width: 2600px){
+  .main::before, .main::after {
+    top: 22.8%;
+    width: 100px;
+  }
+
+  .main::before {
+    left: 0px;
+  }
+
+  .main::after {
+    right: 0px;
+  }
+  
+  span {
+        position: absolute;
+        top: 22.2rem;
+        left: 65rem;
+        width: 500px; 
+    }
+
+    .BasicInfo::before, .BasicInfo::after {
+      top: 37.9%;
+      width: 100px;
+    }
+ 
+    .BasicInfo::before{
+      left: 0px;
+    }
+ 
+    .BasicInfo::after{
+      right: 0px;
+    }
+
+    footer::before, footer::after {
+      top: 219%;
+      width: 80px;
+    }
+  
+    footer::before {
+      left: 0px;
+    }
+  
+    footer::after {
+      right: 0px;
+    }
+}
